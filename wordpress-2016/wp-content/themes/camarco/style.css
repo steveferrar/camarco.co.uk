@@ -15,5 +15,8 @@ Tags: Custom Theme, Bootstrap, Boilerplate, Camarco, Steve Ferrar
 /* Bootstrap */
 @import url("css/bootstrap.min.css");
 
+/* Fonts */
+@import url("fonts/gotham/gotham.css");
+
 /* Custom */
 @import url("css/main.css");

@@ -62,20 +62,40 @@
 <body <?php body_class(); ?>>
 
 	<!--[if lt IE 7]><p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p><![endif]--> 
-
-	<header id="header" class="">
 		
-		<nav id="navigation">
-			<ul>
-				<li class="nav-about"><a href="<?php echo get_home_url(); ?>" title="About">About</a></li>
-				<li class="nav-sectors"><a href="<?php echo get_permalink(5); ?>" title="Sectors">Sectors</a></li>
-				<li class="nav-services"><a href="<?php echo get_permalink(9); ?>" title="Services">Services</a></li>
-				<li class="nav-howwework"><a href="<?php echo get_permalink(13); ?>" title="How We Work">How We Work</a></li>
-				<li class="nav-news"><a href="#" title="News">News</a></li>
-				<li class="nav-contactus"><a href="<?php echo get_permalink(15); ?>" title="Contact Us">Contact Us</a></li>
-			</ul>
-		</nav>
+	<header id="header" class="">
+	
+		<div class="container">
+			
+			<div class="row">
+			
+				<div class="col-xs-9 col-sm-4 col-md-3 col-lg-3 header-logo">
+					<a href="<?php echo get_home_url(); ?>" title="Camarco">
+						<img src="" alt="Camarco" />
+					</a>
+				</div>
+				
+				<div class="header-navigation-container">
+				<div class="col-xs-12 col-sm-8 col-md-9 col-lg-9 header-navigation">
+		
+					<nav id="navigation">
+						<ul>
+							<li class="nav-about"><a href="<?php echo get_permalink(2); ?>" title="About">About</a></li>
+							<li class="nav-sectors"><a href="<?php echo get_permalink(5); ?>" title="Sectors">Sectors</a></li>
+							<li class="nav-services"><a href="<?php echo get_permalink(9); ?>" title="Services">Services</a></li>
+							<li class="nav-howwework"><a href="<?php echo get_permalink(13); ?>" title="How We Work">How We Work</a></li>
+							<li class="nav-news"><a href="<?php echo get_post_type_archive_link('news'); ?>" title="News">News</a></li>
+							<li class="nav-contactus"><a href="<?php echo get_permalink(15); ?>" title="Contact Us">Contact Us</a></li>
+						</ul>
+					</nav>
+				
+				</div>
+				</div>
+			
+			</div>
+		
+		</div>
 	
 	</header>
-	
+		
 	<div id="page-wrapper"><?php // footer.php: </div> ?>

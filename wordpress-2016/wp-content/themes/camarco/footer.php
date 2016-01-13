@@ -9,7 +9,23 @@
 	</div>
 	
 	<footer id="footer" class="">
-		&copy; <?php echo date('Y') ?>
+	
+		<div class="container">
+		
+			<div class="row">
+			
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 footer-logo">
+					<img src="" alt="Camarco" />
+				</div>
+			
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 footer-links">
+					&copy; <?php echo date('Y') ?>
+				</div>
+				
+			</div>
+			
+		</div>
+	
 	</footer>
 
 	<script src="<?php bloginfo('template_url'); ?>/js/vendor/jquery-1.11.3.min.js"></script>
