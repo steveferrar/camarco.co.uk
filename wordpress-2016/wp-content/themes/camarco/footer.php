@@ -3,7 +3,7 @@
 	The template for displaying the FOOTER after the close of <div id="page-wrapper">
 */
 ?>
-
+	
 	<div class="clearfix"></div>
 	<?php // header.php: <div id="page-wrapper"> ?>
 	</div>
@@ -14,12 +14,30 @@
 		
 			<div class="row">
 			
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 footer-logo">
-					<img src="" alt="Camarco" />
-				</div>
+				<div class="col-xs-12">
+				<div class="footer-border">
+				<div class="row">
 			
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 footer-links">
-					&copy; <?php echo date('Y') ?>
+					<div class="col-xxs-12 col-xs-6 col-sm-4 col-md-4 col-lg-4 footer-logo">
+						<img src="<?php bloginfo('template_url'); ?>/img/camarco.png" alt="Camarco" />
+					</div>
+				
+					<div class="col-xxs-12 col-xs-6 col-sm-8 col-md-8 col-lg-8 footer-links">
+						<nav id="footer-navigation">
+							<ul>
+								<!--<li class="nav-footer-facebook"><a href="#" title="Facebook" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/facebook.png" alt="Facebook" /></a></li>-->
+								<li class="nav-footer-twitter"><a href="https://twitter.com/CamarcoPR" title="Twitter" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/twitter.png" alt="Twitter" /></a></li>
+								<li class="nav-footer-linkedin"><a href="https://www.linkedin.com/company/camarco" title="LinkedIn" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/linkedin.png" alt="LinkedIn" /></a></li>
+								<li class="nav-footer-news"><a href="#" title="News">News</a></li>
+								<li class="nav-footer-divide">|</li>
+								<li class="nav-footer-contactus"><a href="#" title="Contact">Contact Us</a></li>
+							</ul>
+						</nav>
+						<p>&copy; <?php echo date('Y') ?> Camarco</p>
+					</div>
+				
+				</div>
+				</div>
 				</div>
 				
 			</div>
@@ -27,13 +45,13 @@
 		</div>
 	
 	</footer>
-
+	
 	<script src="<?php bloginfo('template_url'); ?>/js/vendor/jquery-1.11.3.min.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/js/plugins.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/js/main.js"></script>
-
+	
 	<?php wp_footer(); ?>
-
+	
 	<!-- Google Analytics
 	<script>
 		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

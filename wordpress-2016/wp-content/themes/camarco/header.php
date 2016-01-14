@@ -69,18 +69,18 @@
 			
 			<div class="row">
 			
-				<div class="col-xs-9 col-sm-4 col-md-3 col-lg-3 header-logo">
+				<div class="col-xs-9 col-sm-3 col-md-2 col-lg-2 header-logo">
 					<a href="<?php echo get_home_url(); ?>" title="Camarco">
-						<img src="" alt="Camarco" />
+						<img src="<?php bloginfo('template_url'); ?>/img/camarco.png" alt="Camarco" />
 					</a>
 				</div>
 				
 				<div class="header-navigation-container">
-				<div class="col-xs-12 col-sm-8 col-md-9 col-lg-9 header-navigation">
+				<div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 header-navigation">
 		
 					<nav id="navigation">
 						<ul>
-							<li class="nav-about"><a href="<?php echo get_permalink(2); ?>" title="About">About</a></li>
+							<li class="nav-about"><a href="<?php echo get_home_url(); ?>" title="About">About</a></li>
 							<li class="nav-sectors"><a href="<?php echo get_permalink(5); ?>" title="Sectors">Sectors</a></li>
 							<li class="nav-services"><a href="<?php echo get_permalink(9); ?>" title="Services">Services</a></li>
 							<li class="nav-howwework"><a href="<?php echo get_permalink(13); ?>" title="How We Work">How We Work</a></li>

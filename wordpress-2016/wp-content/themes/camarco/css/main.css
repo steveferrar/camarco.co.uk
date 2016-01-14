@@ -342,9 +342,15 @@
 		
 		text-align:left;
 		
-		margin:0px auto;
+		margin:100px auto;
 		padding:0px;
 		border:0px none;
+	}
+					
+	@media only screen and (max-width:767px){
+		section{
+			margin:50px auto;
+		}
 	}
 	
 		.container{
@@ -452,7 +458,21 @@
 	
 	/* -- Header ---------- */
 	header#header{
+		background:#FEE800;
 	}
+	
+		/* -- Logo ---------- */
+		header#header .header-logo{
+			text-align:left;
+		}
+	
+			header#header .header-logo img{
+				width:auto;
+				max-width:100%;
+				height:auto;
+				
+				padding:20px 0px
+			}
 	
 		/* -- Navigation ---------- */
 		header#header .header-navigation{
@@ -462,56 +482,68 @@
 			header#header .header-navigation nav#navigation{
 			}
 		
-			header#header .header-navigation nav#navigation ul{
-				width:auto;
-				height:auto;
-				
-				display:inline-block;
-				position:relative;	
-				
-				margin:0px auto;
-				padding:0px;
-				border:0px none;
-			}
-		
-				header#header .header-navigation nav#navigation ul li{
+				header#header .header-navigation nav#navigation ul{
 					width:auto;
 					height:auto;
 					
-					display:inline-block;
+					display:block;
 					position:relative;
-					
-					list-style:none;
+					float:right;
 					
 					margin:0px auto;
 					padding:0px;
 					border:0px none;
 				}
+			
+					header#header .header-navigation nav#navigation ul li{
+						width:auto;
+						height:auto;
+						
+						display:block;
+						position:relative;
+						float:left;
+						
+						color:#000000;
+						list-style:none;
+						
+						margin:0px auto;
+						padding:30px 20px;
+						border:0px none;
+					}
 				
 				
-				/* Page Selection */
-				body.page-id-2 header#header .header-navigation nav#navigation ul li.nav-about,
-				body.page-id-5 header#header .header-navigation nav#navigation ul li.nav-sectors,
-				body.page-id-9 header#header .header-navigation nav#navigation ul li.nav-services,
-				body.page-id-13 header#header .header-navigation nav#navigation ul li.nav-howwework,
-				body.post-type-archive-news header#header .header-navigation nav#navigation ul li.nav-news,
-				body.single-news header#header .header-navigation nav#navigation ul li.nav-news,
-				body.page-id-15 header#header .header-navigation nav#navigation ul li.nav-contactus{
-					font-family:'gotham-bold', Arial, Helvetica, sans-serif;
-				}
-				
-				
-				@media only screen and (min-width:768px){
-					/* Hide NEWS in header navigation */
-					header#header .header-navigation nav#navigation ul li.nav-news{
-						display:none;
+					/* Page Selection */
+					body.page-id-2 header#header .header-navigation nav#navigation ul li.nav-about,
+					body.page-id-5 header#header .header-navigation nav#navigation ul li.nav-sectors,
+					body.page-id-9 header#header .header-navigation nav#navigation ul li.nav-services,
+					body.page-id-13 header#header .header-navigation nav#navigation ul li.nav-howwework,
+					body.post-type-archive-news header#header .header-navigation nav#navigation ul li.nav-news,
+					body.single-news header#header .header-navigation nav#navigation ul li.nav-news,
+					body.page-id-15 header#header .header-navigation nav#navigation ul li.nav-contactus{
+						font-family:'gotham-bold', Arial, Helvetica, sans-serif;
 					}
 					
-					/* Hide Header for HOME */
-					body.page-id-2 header#header{
-						display:none;
+					
+					@media only screen and (min-width:768px){
+						
+			
+					header#header .header-navigation nav#navigation ul li.nav-about{
+						padding-left:0px;	
 					}
-				}
+			
+					header#header .header-navigation nav#navigation ul li.nav-contactus{
+						padding-right:0px;	
+					}
+						/* Hide NEWS in header navigation */
+						header#header .header-navigation nav#navigation ul li.nav-news{
+							display:none;
+						}
+						
+						/* Hide Header for HOME */
+						body.page-id-2 header#header{
+							display:none;
+						}
+					}
 		
 	
 		/* -- Mobile Navigation ---------- */
@@ -571,6 +603,124 @@
 /* = Footer
 -----------------------------------------------*/
 	
-	/* -- Header ---------- */
+	/* -- Footer ---------- */
 	footer#footer{
+	}
+	
+	footer#footer .footer-border{
+		margin:0px auto 100px;
+		padding:100px 0px 0px;
+		border-top:1px solid #CCCCCC;
+	}
+	
+		footer#footer .footer-logo{
+			text-align:left;
+		}
+	
+			footer#footer .footer-logo img{
+				width:auto;
+				max-width:100%;
+				height:auto;
+			}
+	
+		footer#footer .footer-links{
+			text-align:right;
+			margin-top:34px;
+		}
+	
+			footer#footer .footer-links nav{
+				width:100%;
+				height:auto;
+			}
+	
+				footer#footer .footer-links nav#footer-navigation{
+					width:100%;
+					height:auto;
+				}
+		
+			footer#footer .footer-links nav#footer-navigation ul{
+				width:auto;
+				height:auto;
+				
+				display:inline-block;
+				position:relative;	
+				
+				margin:0px auto;
+				padding:0px;
+				border:0px none;
+			}
+		
+				footer#footer .footer-links nav#footer-navigation ul li{
+					width:auto;
+					height:auto;
+					
+					display:block;
+					position:relative;
+					float:left;
+					
+					list-style:none;
+					
+					margin:0px auto;
+					padding:0px 5px;
+					border:0px none;
+				}
+		
+					footer#footer .footer-links nav#footer-navigation ul li.nav-footer-news{
+						line-height:44px;
+						padding:0px 20px 0px 30px;	
+					}
+		
+					footer#footer .footer-links nav#footer-navigation ul li.nav-footer-divide{
+						line-height:44px;
+					}
+		
+					footer#footer .footer-links nav#footer-navigation ul li.nav-footer-contactus{
+						line-height:44px;
+						padding:0px 0px 0px 20px;
+					}
+		
+		footer#footer .footer-links p{
+			font-size:15px;
+			line-height:40px;
+			margin-top:-15px;
+		}
+					
+	@media only screen and (max-width:991px){
+		footer#footer .footer-links p{
+			font-size:12px;
+			line-height:30px;
+			margin-top:-10px;
+		}
+	}
+					
+	@media only screen and (max-width:767px){
+		footer#footer .footer-border{
+			margin:0px auto 50px;
+			padding:50px 0px 0px;
+		}
+		footer#footer .footer-links nav#footer-navigation ul li.nav-footer-linkedin{
+			padding-right:0px;
+		}
+		
+		footer#footer .footer-links nav#footer-navigation ul li.nav-footer-news,
+		footer#footer .footer-links nav#footer-navigation ul li.nav-footer-divide,
+		footer#footer .footer-links nav#footer-navigation ul li.nav-footer-contactus{
+			display:none;
+		}
+		
+		footer#footer .footer-links p{
+			margin-top:0px;
+		}
+	}
+	
+	@media only screen and (max-width:479px){
+		footer#footer .footer-logo{
+			text-align:center;
+		}
+		footer#footer .footer-links{
+			text-align:center;
+		}
+		footer#footer .footer-links nav#footer-navigation ul li.nav-footer-linkedin{
+			padding-right:5px;
+		}
 	}
