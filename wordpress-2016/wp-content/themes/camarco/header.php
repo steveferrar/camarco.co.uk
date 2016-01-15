@@ -69,14 +69,20 @@
 			
 			<div class="row">
 			
-				<div class="col-xs-9 col-sm-3 col-md-2 col-lg-2 header-logo">
+				<div class="col-xs-6 col-sm-3 col-md-2 col-lg-2 header-logo">
 					<a href="<?php echo get_home_url(); ?>" title="Camarco">
 						<img src="<?php bloginfo('template_url'); ?>/img/camarco.png" alt="Camarco" />
 					</a>
 				</div>
 				
+				<div class="col-xs-6 hidden-sm hidden-md hidden-lg header-button">
+					<a href="#" class="menu-button-open"><img src="<?php bloginfo('template_url'); ?>/img/menu.png" alt="Menu" /></a>
+				</div>
+				
 				<div class="header-navigation-container">
 				<div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 header-navigation">
+					
+					<a href="#" class="menu-button-close"><img src="<?php bloginfo('template_url'); ?>/img/close.png" alt="Close" /></a>
 		
 					<nav id="navigation">
 						<ul>
@@ -91,6 +97,7 @@
 				
 				</div>
 				</div>
+			
 			
 			</div>
 		

@@ -19,7 +19,9 @@
 				<div class="row">
 			
 					<div class="col-xxs-12 col-xs-6 col-sm-4 col-md-4 col-lg-4 footer-logo">
-						<img src="<?php bloginfo('template_url'); ?>/img/camarco.png" alt="Camarco" />
+						<a href="<?php echo get_home_url(); ?>" title="Camarco">
+							<img src="<?php bloginfo('template_url'); ?>/img/camarco.png" alt="Camarco" />
+						</a>
 					</div>
 				
 					<div class="col-xxs-12 col-xs-6 col-sm-8 col-md-8 col-lg-8 footer-links">
@@ -28,9 +30,9 @@
 								<!--<li class="nav-footer-facebook"><a href="#" title="Facebook" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/facebook.png" alt="Facebook" /></a></li>-->
 								<li class="nav-footer-twitter"><a href="https://twitter.com/CamarcoPR" title="Twitter" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/twitter.png" alt="Twitter" /></a></li>
 								<li class="nav-footer-linkedin"><a href="https://www.linkedin.com/company/camarco" title="LinkedIn" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/linkedin.png" alt="LinkedIn" /></a></li>
-								<li class="nav-footer-news"><a href="#" title="News">News</a></li>
+								<li class="nav-footer-news"><a href="<?php echo get_post_type_archive_link('news'); ?>" title="News">News</a></li>
 								<li class="nav-footer-divide">|</li>
-								<li class="nav-footer-contactus"><a href="#" title="Contact">Contact Us</a></li>
+								<li class="nav-footer-contactus"><a href="<?php echo get_permalink(15); ?>" title="Contact">Contact Us</a></li>
 							</ul>
 						</nav>
 						<p>&copy; <?php echo date('Y') ?> Camarco</p>

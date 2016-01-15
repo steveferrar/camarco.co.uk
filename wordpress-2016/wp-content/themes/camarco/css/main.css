@@ -473,6 +473,38 @@
 				
 				padding:20px 0px
 			}
+			
+			@media only screen and (max-width:991px){
+				header#header .header-logo img{
+					max-width:132px;
+				}	
+			}
+	
+	
+		/* -- Button ---------- */
+		.menu-button-open,
+		.menu-button-close{
+			width:44px;
+			height:44px;
+			
+			display:block;
+			position:absolute;
+			right:25px;
+			top:25px;
+			
+			margin:0px auto;
+			padding:0px;
+			border:0px none;
+		}
+		
+			.menu-button-open img,
+			.menu-button-close img{
+				width:44px;
+				height:44px;
+				display:block;
+				position:relative;
+			}
+	
 	
 		/* -- Navigation ---------- */
 		header#header .header-navigation{
@@ -507,33 +539,41 @@
 						list-style:none;
 						
 						margin:0px auto;
-						padding:30px 20px;
+						padding:0px 20px;
 						border:0px none;
-					}
-				
-				
-					/* Page Selection */
-					body.page-id-2 header#header .header-navigation nav#navigation ul li.nav-about,
-					body.page-id-5 header#header .header-navigation nav#navigation ul li.nav-sectors,
-					body.page-id-9 header#header .header-navigation nav#navigation ul li.nav-services,
-					body.page-id-13 header#header .header-navigation nav#navigation ul li.nav-howwework,
-					body.post-type-archive-news header#header .header-navigation nav#navigation ul li.nav-news,
-					body.single-news header#header .header-navigation nav#navigation ul li.nav-news,
-					body.page-id-15 header#header .header-navigation nav#navigation ul li.nav-contactus{
-						font-family:'gotham-bold', Arial, Helvetica, sans-serif;
 					}
 					
 					
 					@media only screen and (min-width:768px){
+			
+						header#header .header-navigation nav#navigation ul li a{
+							width:auto;
+							height:auto;
+							
+							display:block;
+							position:relative;
+							float:left;
+							
+							color:#000000;
+							list-style:none;
+							
+							margin:0px auto;
+							padding:30px 0px;
+							border:0px none;
+						}
 						
+						body header#header .header-navigation nav#navigation ul li a{
+							border-top:5px solid #FEE800; 
+						}
 			
-					header#header .header-navigation nav#navigation ul li.nav-about{
-						padding-left:0px;	
-					}
-			
-					header#header .header-navigation nav#navigation ul li.nav-contactus{
-						padding-right:0px;	
-					}
+						header#header .header-navigation nav#navigation ul li.nav-about{
+							padding-left:0px;	
+						}
+				
+						header#header .header-navigation nav#navigation ul li.nav-contactus{
+							padding-right:0px;	
+						}
+						
 						/* Hide NEWS in header navigation */
 						header#header .header-navigation nav#navigation ul li.nav-news{
 							display:none;
@@ -544,17 +584,39 @@
 							display:none;
 						}
 					}
+				
+				
+						/* Page Selection */
+						body.page-id-2 header#header .header-navigation nav#navigation ul li.nav-about a,
+						body.page-id-5 header#header .header-navigation nav#navigation ul li.nav-sectors a,
+						body.page-id-9 header#header .header-navigation nav#navigation ul li.nav-services a,
+						body.page-id-13 header#header .header-navigation nav#navigation ul li.nav-howwework a,
+						body.post-type-archive-news header#header .header-navigation nav#navigation ul li.nav-news a,
+						body.single-news header#header .header-navigation nav#navigation ul li.nav-news a,
+						body.page-id-15 header#header .header-navigation nav#navigation ul li.nav-contactus a{
+							font-family:'gotham-bold', Arial, Helvetica, sans-serif;
+							border-color:#000000;
+						}
 		
 	
 		/* -- Mobile Navigation ---------- */
 		@media only screen and (max-width:767px){
 			header#header .header-navigation-container{
+				background:rgba(0,0,0,0.9);
+				
+				width:100%;
+				height:100%;
+				
 				display:none;
+				position:fixed;
+				z-index:999;
+				
+				margin:0px auto;
+				padding:0px;
+				border:0px none;
 			}
 			
 			header#header .header-navigation{
-				background:rgba(0,0,0,0.9);
-				
 				width:100%;
 				min-width:280px;
 				height:100%;
@@ -563,7 +625,7 @@
 				align-items:center;
 				justify-content:center;
 				
-				position:fixed;
+				position:relative;
 				z-index:100;
 				
 				margin:0px auto;

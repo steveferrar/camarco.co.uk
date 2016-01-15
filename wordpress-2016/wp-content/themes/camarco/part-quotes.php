@@ -18,7 +18,7 @@ if(get_field('quotes')):
 			
 					<ul>
 						<?php
-						while(get_field('quotes')):
+						while(has_sub_field('quotes')):
 						if(get_sub_field('text')): 
 						?>
 							<li>
