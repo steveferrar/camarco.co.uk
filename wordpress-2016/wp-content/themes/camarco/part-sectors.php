@@ -1,6 +1,6 @@
 <?php
-/*
-The template part for displaying the SECTORS section.
+/**
+	The template part for displaying the SECTORS section.
 */
 ?>
 	
@@ -20,13 +20,21 @@ if(get_field('sectors')):
 				if((get_sub_field('title')) && (get_sub_field('text'))): 
 				?>
 			
-					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 sector">
+
 						<h2><?php echo get_sub_field('title'); ?></h2>
-						<?php echo get_sub_field('text'); ?>
-						<?php // echo get_sub_field('add_read_more'); ?>
-						<div class="read-more-text">
-							<?php echo get_sub_field('read_more_text'); ?>
-						</div>
+
+						<p class="sector__text">
+						<?php 
+						echo get_sub_field('text'); 
+						if(get_sub_field('add_read_more') == 'Yes'):
+							echo '&nbsp;<a href="" class="sector__read-more js-read-more" class="read-more-link">Read More</a>';
+							echo '</p>';
+							echo '<div class="sector__more-text js-more-text">' . get_sub_field('read_more_text') . '</div>';
+						else:
+							echo '</p>';
+						endif;
+						?>
 					
 					</div>
 							

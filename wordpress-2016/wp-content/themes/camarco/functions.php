@@ -80,7 +80,8 @@
 			"unlink", 
 			"separator", 
 			"code", 
-			"separator"
+			"separator",
+			// "wp_more"
 		);
 	}
 	

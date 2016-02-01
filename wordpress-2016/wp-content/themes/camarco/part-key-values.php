@@ -1,6 +1,6 @@
 <?php
-/*
-The template part for displaying the QUOTES section.
+/**
+	The template part for displaying the QUOTES section.
 */
 ?>
 	

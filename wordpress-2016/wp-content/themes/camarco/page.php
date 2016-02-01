@@ -1,5 +1,5 @@
 <?php
-/*
+/**
 	The template for displaying all GENERIC and most SPECIFIC pages.
 */
 get_header(); ?>

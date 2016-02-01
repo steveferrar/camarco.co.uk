@@ -24,4 +24,17 @@ $(document).ready(function(){
 	});
 
 
+	// ----- Sectors (Read More Button)
+	// ---------------------------------------------
+	$('.js-read-more').click(function(e){
+		e.preventDefault();
+		$(this).fadeOut('fast');
+		$(this).parent().next().stop().slideDown('fast');
+	});
+
+
+
+	
+
+
 });
