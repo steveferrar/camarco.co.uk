@@ -86,8 +86,8 @@
 		font-style:normal;
 		font-weight:bold;	
 			
-		margin:15px auto;
-		padding:0px;
+		margin:0px auto;
+		padding:47px 0px 7px;
 	}
 	
 		h1{
@@ -117,8 +117,8 @@
 		font-weight:normal;
 		line-height:40px;	
 			
-		margin:15px auto;
-		padding:0px;
+		margin:0px auto;
+		padding:7px 0px;
 	}
 	
 	
@@ -205,7 +205,7 @@
 	p a:active,
 	p a:visited 
 	p a:hover {
-		color:#000000;
+		color:#000000 !important;
 		font-family:'gotham-bold', Arial, Helvetica, sans-serif;
 		text-decoration:underline;
 	}
@@ -341,6 +341,12 @@
 	section.quotes{
 		background:#A8B6BF;
 		padding:70px 0px;
+	}
+	
+	
+	/* -- Columns ---------- */
+	.columns{
+		margin:-70px auto -50px ;
 	}
 	
 	
