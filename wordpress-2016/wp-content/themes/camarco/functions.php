@@ -1,34 +1,41 @@
-<?php /* Functions.php */
+<?php 
 
-// ACTIONS
-	add_action('login_enqueue_scripts', 'my_login_stylesheet' );
-
-// FILTERS
-	add_filter('login_headerurl', 'my_login_logo_url');
-	add_filter('login_headertitle', 'my_login_logo_url_title');
-
-
-/** Login Stylesheet */
+/** 
+	Login Screen 
+*/
 
 // Custom Login Stylesheet	  
 	function my_login_stylesheet() { ?>
 		<link rel="stylesheet" id="custom_wp_admin_css"	 href="<?php echo get_bloginfo( 'stylesheet_directory' ) . '/css/style-login.css'; ?>" type="text/css" media="all" />
 	<?php };
 		
-	// Custom Login Logo URL	
+// Custom Login Logo URL	
 	function my_login_logo_url() {
 		return get_bloginfo( 'url' );
 	};
+	add_action('login_enqueue_scripts', 'my_login_stylesheet' );
 	
+// Custom Login Logo Title
 	function my_login_logo_url_title() {
 		return 'Camarco';
 	};
+	add_filter('login_headerurl', 'my_login_logo_url');
+	add_filter('login_headertitle', 'my_login_logo_url_title');
 
 
-/** Images */
+/** 
+	Menus
+*/
+
+// Remove Admin Bar Front End
+	// add_filter('show_admin_bar', '__return_false');
+
+
+/** 
+	Images 
+*/
 
 // Set post thumbnail size
-	
 	if(function_exists('add_image_size')) { 
 		// Set image size
 		add_image_size( 'profile-image', 165, 215, true);
@@ -37,7 +44,9 @@
 	};
 
 
-/** Editor */
+/** 
+	Custom Editors
+*/
 
 //Edit tiny MCE to remove elements
 	if (isset($wp_version)) {
@@ -52,11 +61,11 @@
 			"bold", 
 			"italic", 
 			"underline", 
-			"strikethrough",
+			// "strikethrough",
 			"separator",
 			"bullist", 
 			"numlist", 
-			"blockquote", 
+			// "blockquote", 
 			"hr", 
 			// "removeformat", 
 			"separator",
@@ -75,7 +84,6 @@
 		);
 	}
 	
-
 // Second toolbar line
 	function extended_editor_mce_buttons_2($buttons) {
 		return array(
@@ -83,7 +91,9 @@
 	}
 
 
-/** Admin Bar */
+/** 
+	Admin Bar 
+*/
 
 // Remove Admin Bar Front End
 	add_filter('show_admin_bar', '__return_false');
