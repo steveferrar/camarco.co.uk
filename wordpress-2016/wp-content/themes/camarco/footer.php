@@ -52,6 +52,9 @@
 	<script src="<?php bloginfo('template_url'); ?>/js/plugins.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/js/main.js"></script>
 	
+    <!-- Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+	
 	<?php wp_footer(); ?>
 	
 	<!-- Google Analytics

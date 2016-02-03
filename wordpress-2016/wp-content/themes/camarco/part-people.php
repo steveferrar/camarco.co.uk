@@ -37,7 +37,7 @@ if(get_field('profiles')):
 									<div class="col-xxs-12 col-xs-4 col-sm-3 col-md-2 col-lg-2">
 									
 										<?php $photo = wp_get_attachment_image_src( get_sub_field('photo') , '' ); ?>
-										<img src="<?php echo $photo[0]; ?>" alt="<?php echo get_sub_field('name'); ?>" />
+										<img src="<?php echo $photo[0]; ?>" alt="<?php echo get_sub_field('name'); ?>" data-no-retina />
 										
 									</div>
 								
@@ -77,7 +77,7 @@ if(get_field('profiles')):
 								
 								<a href="#" title="<?php echo get_sub_field('name'); ?>">
 									
-									<img src="<?php echo $photo[0]; ?>" alt="<?php echo get_sub_field('name'); ?>" alt="photo" />
+									<img src="<?php echo $photo[0]; ?>" alt="<?php echo get_sub_field('name'); ?>" alt="photo" data-no-retina />
 									<div class="caption">
 										<?php 
 											echo '<span class="name">' . get_sub_field('name') . '</span>';
