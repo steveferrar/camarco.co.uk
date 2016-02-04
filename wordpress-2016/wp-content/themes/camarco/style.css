@@ -15,6 +15,9 @@ Tags: Custom Theme, Bootstrap, Boilerplate, Camarco, Steve Ferrar
 /* Bootstrap */
 @import url("css/bootstrap.min.css");
 
+/* Nivo Lightbox */
+@import url("css/nivo-lightbox.css");
+
 /* Fonts */
 @import url("fonts/gotham/gotham.css");
 

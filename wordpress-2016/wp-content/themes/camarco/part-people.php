@@ -61,7 +61,7 @@ if(get_field('profiles')):
 				
 				</div>
 				
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 our-people-thumbnails">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 people__thumbnails">
 				
 					<div class="row">
 			
@@ -72,22 +72,50 @@ if(get_field('profiles')):
 						if((get_sub_field('name')) && (get_sub_field('photo'))): 
 						$photo = wp_get_attachment_image_src( get_sub_field('photo') , '' );
 						?>
-					
-							<div class="col-xxs-6 col-xs-4 col-sm-4 col-md-3 col-lg-2 our-people-thumbnail">
+							
+							<div class="col-xxs-6 col-xs-4 col-sm-4 col-md-3 col-lg-2 people__thumbnail">
 								
-								<a href="#" title="<?php echo get_sub_field('name'); ?>">
+								<a href="#inline-content-<?php echo $t; ?>" title="<?php echo get_sub_field('name'); ?>" class="js-lightbox" data-lightbox-type="inline" data-lightbox-gallery="people">
 									
 									<img src="<?php echo $photo[0]; ?>" alt="<?php echo get_sub_field('name'); ?>" alt="photo" data-no-retina />
-									<div class="caption">
+									
+									<div class="people__thumbnail-caption">
+									
 										<?php 
-											echo '<span class="name">' . get_sub_field('name') . '</span>';
-											if (get_sub_field('job_title')): 
-												echo '<span class="job-title hidden-xs">' . get_sub_field('job_title') . '</span>'; 
-											endif; 
+										echo '<span class="name"><strong>' . get_sub_field('name') . '</strong></span>';
+										if (get_sub_field('job_title')): 
+											echo '<span class="job-title hidden-xs">' . get_sub_field('job_title') . '</span>'; 
+										endif; 
 										?>
+									
 									</div>
 									
 								</a>
+
+
+								<!-- Inline Content (Lightbox) -->
+								<div id="inline-content-<?php echo $t; ?>" class="people__info">
+
+									<div class="row">
+
+										<div class="col-xxs-12 col-xs-4 col-sm-3 col-md-3 col-lg-2">
+											<img src="<?php echo $photo[0]; ?>" alt="<?php echo get_sub_field('name'); ?>" alt="photo" data-no-retina />
+										</div>
+
+										<div class="col-xxs-12 col-xs-8 col-sm-9 col-md-9 col-lg-10">
+											
+											<p class="people__info-name"><strong><?php echo get_sub_field('name'); ?></strong></p>
+											<p class="people__info-job"><em><?php echo get_sub_field('job_title'); ?></em></p>
+											</p>
+											<div class="people__info-biography">
+												<?php echo get_sub_field('biography'); ?>
+											</div>
+
+										</div>
+
+									</div>
+
+								</div>
 							
 							</div>
 									

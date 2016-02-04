@@ -27,9 +27,9 @@
 					<div class="col-xxs-12 col-xs-6 col-sm-8 col-md-8 col-lg-8 footer-links">
 						<nav id="footer-navigation">
 							<ul>
-								<!--<li class="nav-footer-facebook"><a href="#" title="Facebook" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/facebook.png" alt="Facebook" /></a></li>-->
-								<li class="nav-footer-twitter"><a href="https://twitter.com/CamarcoPR" title="Twitter" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/twitter.png" alt="Twitter" /></a></li>
-								<li class="nav-footer-linkedin"><a href="https://www.linkedin.com/company/camarco" title="LinkedIn" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/linkedin.png" alt="LinkedIn" /></a></li>
+								<?php if(get_field('facebook', 15)): ?><li class="nav-footer-facebook"><a href="<?php echo get_field('facebook', 15); ?>" title="Facebook" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/facebook-footer.png" alt="Facebook" /></a></li><?php endif; ?>
+								<?php if(get_field('twitter', 15)): ?><li class="nav-footer-twitter"><a href="<?php echo get_field('twitter', 15); ?>" title="Twitter" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/twitter-footer.png" alt="Twitter" /></a></li><?php endif; ?>
+								<?php if(get_field('linkedin', 15)): ?><li class="nav-footer-linkedin"><a href="<?php echo get_field('linkedin', 15); ?>" title="LinkedIn" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/linkedin-footer.png" alt="LinkedIn" /></a></li><?php endif; ?>
 								<li class="nav-footer-news"><a href="<?php echo get_post_type_archive_link('news'); ?>" title="News">News</a></li>
 								<li class="nav-footer-divide">|</li>
 								<li class="nav-footer-contactus"><a href="<?php echo get_permalink(15); ?>" title="Contact">Contact Us</a></li>
@@ -53,7 +53,7 @@
 	<script src="<?php bloginfo('template_url'); ?>/js/main.js"></script>
 	
     <!-- Google Maps -->
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 	
 	<?php wp_footer(); ?>
 	
