@@ -549,15 +549,11 @@
 	
 	/* -- Quotes ---------- */
 	section.quotes{
-		background-image:url('../img/background-quote-01.jpg'); 
-		background-color:#A8B6BF; 
-		background-repeat:no-repeat;
+		background:url('../img/background-quote-01.jpg') no-repeat right center scroll #A8B6BF; 
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
-		background-attachment: scroll;
-			background-position:right center;
 		padding:50px 0px 70px;
 	}
 
@@ -623,7 +619,7 @@
 
 	/* -- Home / About Page ---------- */
 	section.home{
-		background:url('../img/background.png'); no-repeat center center fixed #FEE800; 
+		background:url('../img/background.png') no-repeat center center scroll #FEE800; 
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
@@ -1079,7 +1075,16 @@
 	
 	/* -- Header ---------- */
 	header#header{
-		background:#FEE800;
+
+		background-image:url('../img/background-header.jpg'); 
+		background-color:#FEE800; 
+		background-repeat:no-repeat;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-attachment: scroll;
+		background-position:center center;
 	}
 			
 	@media only screen and (max-width:767px){
