@@ -23,13 +23,12 @@ $quote_background = get_bloginfo('template_url') . '/img/background-quote-0' . r
 					shuffle($quotes);
 					foreach($quotes as $quote):
 					if($quote['text']):
-					$logo = wp_get_attachment_image_src( $quote['image'] , 'full' );
+					$logo = wp_get_attachment_image_src( $quote['logo'] , 'full' );
 					?>
 						<p class="quote__quotation"><img src="<?php bloginfo('template_url'); ?>/img/quote.png" alt="&ldquo;" /></p>
 						<p class="quote__text"><?php echo $quote['text']; ?></p>
 						<?php if($quote['author']): echo '<p class="quote__divide"><img src="' . get_bloginfo('template_url') . '/img/quote-divide.png" alt="&mdash;" /></p><p class="quote__author">' . $quote['author'] . '</p>'; endif; ?>
-						<?php if($quote['image']): echo '<p class="quote__image"><img src="' . $logo[0] . '" alt="' . $quote['author'] . '" /></p>'; endif; ?>
-						
+						<?php if($logo): echo '<p class="quote__image"><img src="' . $logo[0] . '" alt="' . $quote['author'] . '" /></p>'; endif; ?>
 					<?php
 					endif;
 					break;

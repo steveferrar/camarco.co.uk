@@ -280,7 +280,7 @@
 		p,
 		li{
 			font-size:15px;
-			line-height:30px;	
+			line-height:25px;	
 		}
 	
 		h1{
@@ -321,35 +321,13 @@
 		width:100%;
 		height:auto;
 		min-height:46px;
-		
 		color:inherit;
 		font-family:inherit;
 		font-weight:normal;
-		font-size:17px;
 		font-style:normal;
-		line-height:27px;
-		text-transform:uppercase;	
 			
 		margin:17px auto 0px;
 		padding:10px 0px 19px;
-	}
-
-	@media only screen and (max-width: 1240px){
-		label {
-			font-size:15px;	
-		}
-	}
-	
-	@media only screen and (max-width: 991px){
-		label {
-			font-size:13px;	
-		}
-	}
-	
-	@media only screen and (max-width: 767px){
-		label {
-			font-size:11px;	
-		}
 	}
 	
 	input[type="text"],
@@ -361,19 +339,17 @@
 		background:#FFFFFF;
 		
 		width:100%;
-		height:46px;
+		height:56px;
 		
 		display:block;
 		position:relative;
 		overflow:hidden;
 		
-		color:#05A6EB;
+		color:#777777;
 		
-		margin:17px auto 0px;
+		margin:0px auto 25px;
 		padding:0px 15px;
-		border:0px none;
-		border-top:3px solid #FFFFFF;
-		border-bottom:3px solid #868686;
+		border:2px solid #DDDDDD;
 			
 		outline:none;
 	}
@@ -392,9 +368,8 @@
 		input[type="number"]:hover,
 		textarea:hover{
 			background:#FFFFFF;
-			color:#05A6EB;
-			border-top:3px solid #FFFFFF;
-			border-bottom:3px solid #05A6EB;
+			color:#777777;
+			border:2px solid #BBBBBB;
 		}
 	
 		input[type="text"]:focus,
@@ -404,9 +379,8 @@
 		input[type="number"]:focus,
 		textarea:focus{
 			background:#FFFFFF;
-			color:#05A6EB;
-			border-top:3px solid #FFFFFF;
-			border-bottom:3px solid #B4E3F7;
+			color:#777777;
+			border:2px solid #BBBBBB;
 		}
 	
 		input[type="text"]:focus:hover,
@@ -416,87 +390,13 @@
 		input[type="number"]:focus:hover,
 		textarea:focus:hover{
 			background:#FFFFFF;
-			color:#05A6EB;
-			border-top:3px solid #FFFFFF;
-			border-bottom:3px solid #05A6EB;
+			color:#777777;
+			border:2px solid #BBBBBB;
 			outline:none;
 		}
-
-	.styled-select {
-		background:url('../img/styled-select-arrow.png') no-repeat center right #FFFFFF;
-		background-size:52px 46px;
-		
-		width:100%;
-		height:46px; 
-		
-		display:block;
-		position:relative;
-		overflow:hidden;
-		
-		margin:17px auto 0px;
-		padding:0px 0px 0px 0px;
-		border:0px auto;
-		border:1px solid #CCCCCC;
-	}
-	@media only screen and (min--moz-device-pixel-ratio: 2),
-	only screen and (-o-min-device-pixel-ratio: 2/1),
-	only screen and (-webkit-min-device-pixel-ratio: 2),
-	only screen and (min-device-pixel-ratio: 2) {
-		.styled-select {
-			background-image:url('../img/styled-select-arrow@2x.png');
-		}
-	}
-	
-	.styled-select:hover {
-		border:1px solid #CCCCCC;
-	}
-	
-		.styled-select select{
-			background:transparent;
-			
-			width:120%;
-			height:44px;
-			
-			display:block;
-			position:relative;
-		
-			color:#848484;
-		   
-			margin:0px auto;
-			padding:0px 15px;
-			border:0px none;
-			border-top:3px solid #FFFFFF;
-			border-bottom:3px solid #FFFFFF; 
-			
-			border-radius:0;
-			
-			-webkit-appearance:none;
-	
-			-webkit-box-shadow:none;
-			-moz-box-shadow:none;
-			box-shadow:none;
-		}
-		
-		.styled-select select:focus{
-			outline:none;
-	
-			-webkit-box-shadow:none;
-			-moz-box-shadow:none;
-			box-shadow:none;
-		}
-		
-	@media(max-width: 479px){
-		.styled-select {
-			width:100%;
-		}
-	}
-
-	input[type="checkbox"]{
-		margin:4px 4px 20px 0px;
-	}
 
 	input[type="submit"]{
-		background:url('../img/arrow-right-white.png') right 35px center no-repeat #70C51D; 
+		background:#7B7B7B; 
 		background-size:15px 23px;
 		
 		width:auto;
@@ -505,32 +405,14 @@
 		display:inline-block;
 		
 		color:#FFFFFF;
-		font-size:22px;
 		line-height:32px;
-		letter-spacing:2px;
 		text-decoration:none;
-		text-transform:uppercase;
 		
-		margin:47px auto;
-		padding:20px 85px 20px 70px;
-		border:0px none;
-			
-		-webkit-border-radius:100px;
-		-moz-border-radius:100px;
-		border-radius:100px;	
+		margin:0px auto 25px;
+		padding:15px 30px;
+		border:0px none;	
 			
 		outline:none;
-	}
-	@media
-	only screen and (-webkit-min-device-pixel-ratio: 2),
-	only screen and (min--moz-device-pixel-ratio: 2),
-	only screen and (-o-min-device-pixel-ratio: 2/1),
-	only screen and (min-device-pixel-ratio: 2),
-	only screen and (min-resolution: 192dpi),
-	only screen and (min-resolution: 2dppx) { 
-		input[type="submit"]{
-			background-image:url('../img/arrow-right-white@2x.png');
-		}
 	}
 	
 		input[type="submit"]:active,
@@ -540,139 +422,22 @@
 			opacity:0.8;
 		}
 	
-	@media only screen and (max-width: 767px) {
+	@media only screen and (max-width: 991px){
 		input[type="submit"]{
-			font-size:16px; 
-			padding:15px 70px 15px 40px;
+			padding:10px 25px;
 		}
 	}
 	
 	form img.ajax-loader{
-		margin-top: initial;
-		position:absolute;
-		top:0px;
-		left: 50%;
-		z-index:20;
-		margin-left:-8px;
+		padding-left:15px;
 	}
-	
-	
-	/* Checkboxes */
-	.checkbox-holder {
-		width:100%;
-		height:32px;
-		
-		position:relative;
-		display:block;
-		clear:both;
-		
-		margin:17px auto 0px;
-		padding:0px;
-		border:0px none;
-	}
-	
-		.checkbox-holder span.wpcf7-form-control-wrap,
-		.checkbox-holder span.wpcf7-form-control,
-		.checkbox-holder span.wpcf7-list-item,
-		.checkbox-holder label{
-			width:32px;
-			height:32px;
-			
-			float:left;
-			display:block;
-			clear:none;
-			
-			position:absolute;
-			top:0px;
-			left:0px;
-			
-			font-size:32px;
-			line-height:32px;
-			
-			margin:0px auto;
-			padding:0px;
-			border:0px none;
-		}
-		
-			.checkbox-holder input[type=checkbox] {
-				display:none;
-			}
-			
-			.checkbox-holder input[type=checkbox] + span.wpcf7-list-item-label {
-				background:url('../img/icon-checkbox.png') center center no-repeat #FFFFFF;
-				background-size:32px 32px;
-				
-				width:32px !important;
-				height:32px;
-				
-				display:block;
-				position:absolute;
-				left:0px;
-				top:0px;
-				
-				color:#FFFFFF;
-				font-size:0px;
-				text-align:left;
-				text-indent:-9999;
-				text-transform:uppercase;
-				
-				margin:0px auto;
-				padding:0px;
-				border:1px solid #CCCCCC;
-				
-				vertical-align:middle;
-				cursor: pointer;
-				
-				overflow:hidden;
-			}
-			
-			.checkbox-holder p.checkbox-label{
-				width:100%;
-				height:32px;
-				
-				float:left;
-				text-align:left;
-				
-				margin:0px auto;
-				padding:2px 0px 2px 46px; 
-				border:0px none;
-			}
-
-			 .checkbox-holder input[type=checkbox]:checked + span.wpcf7-list-item-label,
-			  .checkbox-holder input[type=checkbox]:checked + span.wpcf7-list-item-label:hover{
-				background-image:url('../img/icon-checkbox-selected.png');
-			}
-	
-			@media only screen and (min--moz-device-pixel-ratio: 2),
-			only screen and (-o-min-device-pixel-ratio: 2/1),
-			only screen and (-webkit-min-device-pixel-ratio: 2),
-			only screen and (min-device-pixel-ratio: 2) {
-				.checkbox-holder input[type=checkbox] + span.wpcf7-list-item-label{
-					background-image:url('../img/icon-checkbox@2x.png');
-				}
-				 .checkbox-holder input[type=checkbox]:checked + span.wpcf7-list-item-label,
-				 .checkbox-holder input[type=checkbox]:checked + span.wpcf7-list-item-label:hover{
-					background-image:url('../img/icon-checkbox-selected@2x.png');
-				}
-			}
-			
-			@media screen and (max-width: 479px){
-				.checkbox-holder input[type=checkbox] + span.wpcf7-list-item-label,
-				.checkbox-holder input[type=checkbox] + span.wpcf7-list-item-label:hover,
-				.checkbox-holder input[type=checkbox]:checked + spa.wpcf7-list-item-labeln,
-				.checkbox-holder input[type=checkbox]:checked + span.wpcf7-list-item-label:hover{
-					background-size:32px 32px;
-					width:32px !important;
-					height:32px;
-				}
-			}
 
 
 	/* Messages */
 	.wpcf7-response-output{
 		background:#fefccb;
 		
-		width:50%;
+		width:100%;
 		height:auto;	
 		
 		display:block;
@@ -680,9 +445,11 @@
 		clear:both;
 		
 		color:#6d7025;
+		font-size:15px;
+		line-height:20px;
 		text-align:center;
 		
-		margin:0px auto 17px !important;
+		margin:0px auto 25px !important;
 		padding:10px 15px !important;
 		border:1px solid #6d7025;
 	
@@ -712,7 +479,7 @@
 		input.wpcf7-not-valid:focus,
 		textarea.wpcf7-not-valid:focus{
 			background:#ffffff !important;
-			border-bottom-color:#1E77DA !important;
+			border-bottom-color:#BBBBBB !important;
 		}
 		
 	select.wpcf7-not-valid{
@@ -735,7 +502,7 @@
 			font-size:11px !important;
 			line-height:16px !important;
 			
-			margin:5px 0px 0px 0px;
+			margin:-20px auto 25px !important;
 			padding:0px;
 			border:0px none;
 		}
@@ -782,11 +549,15 @@
 	
 	/* -- Quotes ---------- */
 	section.quotes{
-		background:url('../img/background-quote-01.jpg'); no-repeat right center fixed #A8B6BF; 
+		background-image:url('../img/background-quote-01.jpg'); 
+		background-color:#A8B6BF; 
+		background-repeat:no-repeat;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
+		background-attachment: scroll;
+			background-position:right center;
 		padding:50px 0px 70px;
 	}
 
@@ -805,12 +576,27 @@
 	.quote__author{}
 
 	.quote__image{}
+
+	.quote__image img{
+		max-width:240px;
+		height:auto;
+		margin:15px 0px 0px;
+	}
 	
+	@media only screen and (max-width:767px){
+		.quote__image img{
+			max-width:160px;
+		}
+	}
+
 	@media only screen and (max-width:479px){
 		.quote__quotation img,
 		.quote__author img{
 			width:29px;
 			height:auto;
+		}
+		.quote__image img{
+			max-width:120px;
 		}
 	}
 	
@@ -1074,40 +860,47 @@
 		margin-bottom:100px;
 	}
 
-	.contact{}
+	section.contact{
+		margin-top:-50px;
+	}
+	
+	@media only screen and (max-width:767px){
+		section.contact{
+			margin-top:-30px;
+		}
+	}
 
 		/* Contact Form */
-		.contact__form{}
+		.contact__form{
+			margin-top:15px;
+		}
+
+		.contact__form .form-element{
+		}
 		
 		.contact__form input[type='text'],
 		.contact__form input[type='email'],
 		.contact__form textarea{
-			margin-top:0px;
 		}
 
 		.contact__form label{
-			padding-bottom:0px;
-		}
-
-		.contact__form .wpcf7-not-valid-tip{
-			color:#FFF35A;
-		}
-		
-		.contact__form input.wpcf7-not-valid,
-		.contact__form textarea.wpcf7-not-valid{
-			border-bottom-color:#FFF35A !important;
+			display:none;
 		}
 
 
 		/* Contact Address */
 		.contact__address{}
 
+		@media only screen and (max-width:767px){
+			.contact__address{
+				margin-top:15px;
+			}
+		}
+
 
 		/* Contact Links */
-		.contact__links{
-			margin-top:-20px;
-		}
-		
+		.contact__links{}
+
 		.contact__links span{
 			background-size:32px 32px;
 			background-position:left center;
@@ -1182,6 +975,103 @@
 			font-family:'gotham-book', Arial, Helvetica, sans-serif !important;
 			text-decoration:none !important;
 		}
+
+
+	/* -- News Page ---------- */
+	.news{
+		margin:-70px auto 0px ;
+	}
+
+
+	/* Archive */
+	.news__article--archive:nth-child(2n+1){
+		clear:both;
+	}
+
+	.news__article--archive .news__article-inner{
+		margin-top:50px;
+		padding-top:50px;
+		border-top:2px solid #DDDDDD;
+	}
+
+	.news__article--archive:nth-child(1) .news__article-inner,
+	.news__article--archive:nth-child(2) .news__article-inner{
+		margin-top:0px;
+		padding-top:0px;
+		border-top:0px none;
+	}
+
+
+	/* Article Elements */
+	.news__article{}
+
+	.news__article-title{
+		padding-top:7px;
+	}
+
+	.news__article-date{
+		font-style:italic;
+		font-size:15px;
+	}
+
+
+	.news__article-download,
+	.news__article-download:link{
+		background:url('../img/document.png') 20px center no-repeat #7B7B7B;
+		background-size:16px 16px;
+		
+		width:auto;
+		height:auto;
+		
+		display:inline-block;
+		
+		color:#FFFFFF !important;
+		font-family:'gotham-book', Arial, Helvetica, sans-serif !important;
+		font-size:15px;
+		line-height:32px;
+		text-decoration:none !important;
+		
+		margin:20px auto;
+		padding:15px 30px 15px 50px;
+		border:0px none;	
+			
+		outline:none;
+	}
+
+	@media
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (   min--moz-device-pixel-ratio: 2),
+	only screen and (     -o-min-device-pixel-ratio: 2/1),
+	only screen and (        min-device-pixel-ratio: 2),
+	only screen and (                min-resolution: 192dpi),
+	only screen and (                min-resolution: 2dppx) {
+		.news__article-download,
+		.news__article-download:link{
+			background-image:url('../img/document@2x.png');
+		}
+	}
+	
+	.news__article-download:active,
+	.news__article-download:hover,
+	.news__article-download:focus,
+	.news__article-download:focus:hover{
+		opacity:0.8;
+	}
+
+
+	/* Navigation */
+	.news__navigation{
+		text-align:center;
+	}
+
+	.news__navigation a,
+	.news__navigation a:link,
+	.news__navigation a:active,
+	.news__navigation a:visited 
+	.news__navigation a:hover {
+		color:#777777 !important;
+		font-family:'gotham-book', Arial, Helvetica, sans-serif !important;
+	}
 
 
 /* = Header

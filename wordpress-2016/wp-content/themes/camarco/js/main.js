@@ -75,7 +75,7 @@ $(document).ready(function(){
 			var myLatlng = new google.maps.LatLng(51.5142235,-0.093489);
 			
 			var mapOptions = {
-				zoom: 17,
+				zoom: 16,
 				center: myLatlng,
 				scrollwheel: false,
 				draggable: false,

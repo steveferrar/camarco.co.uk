@@ -37,10 +37,11 @@
 
 // Set post thumbnail size
 	if(function_exists('add_image_size')) { 
-		// Set image size
+		// Hard Crop
 		add_image_size( 'profile-image', 165, 215, true);
-		// Dynamic image size
+		// Soft Crop
 		add_image_size( 'header-image', 1440, 9999, false);
+		add_image_size( 'quote-logo', 240, 9999, false);
 	};
 
 

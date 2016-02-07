@@ -1,18 +1,16 @@
 <?php
 /**
-	The main template file.
+	The template for displaying the NEWS archive.
 */
 get_header(); ?>
-	
+
 	<?php if ( have_posts() ) : ?>
-	
-		<?php while ( have_posts() ) : the_post(); ?>
-
-			<?php get_template_part('part', 'page'); ?>
-			
-		<?php endwhile; ?>
-
-		<?php get_template_part('part', 'quotes'); ?>
+							
+		<?php 
+		// News
+		get_template_part('part', 'news');
+		get_template_part('part', 'quotes'); 
+		?>
 		
 	<?php else : ?>
 		
@@ -41,3 +39,4 @@ get_header(); ?>
 	<div class="clearfix"></div>
 	
 <?php get_footer(); ?>
+	
