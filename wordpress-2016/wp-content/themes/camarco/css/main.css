@@ -558,6 +558,10 @@
 		padding:50px 0px 70px;
 	}
 
+	.page-id-2 section.quotes{
+		margin-top:0px;
+	}
+
 	.quote{
 		color:#FFFFFF;
 	}
@@ -695,19 +699,19 @@
 
 	
 	/* Video */
-	.video{	
-		text-align:left;
+	section.video{	
+		text-align:center;
 		margin-top:-50px;
 	}
 	
 		.video__thumbnail{
 			width:100%;
-			max-width:320px;
-			margin:0px;
+			max-width:480px;
+			margin:0px auto;
 		}
 
 	@media only screen and (max-width:991px){
-		.video{	
+		section.video{	
 			text-align:center;
 			margin-top:-50px;
 		}
@@ -717,7 +721,7 @@
 	}
 
 	@media only screen and (max-width:787px){
-		.video{	
+		section.video{	
 			margin-top:0px;
 		}
 	}
