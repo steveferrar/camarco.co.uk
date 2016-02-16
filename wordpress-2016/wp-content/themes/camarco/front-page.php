@@ -12,6 +12,7 @@ get_header(); ?>
 			// Home Page
 			get_template_part('part', 'home');
 			get_template_part('part', 'page');
+			get_template_part('part', 'video');
 			get_template_part('part', 'quotes');
 			get_template_part('part', 'people');
 	 	?>
