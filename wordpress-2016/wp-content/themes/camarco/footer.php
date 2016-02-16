@@ -18,13 +18,13 @@
 				<div class="footer-border">
 				<div class="row">
 			
-					<div class="col-xxs-12 col-xs-6 col-sm-4 col-md-4 col-lg-4 footer-logo">
+					<div class="col-xxs-12 col-xs-6 col-sm-4 col-md-3 col-lg-3 footer-logo">
 						<a href="<?php echo get_home_url(); ?>" title="Camarco">
 							<img src="<?php bloginfo('template_url'); ?>/img/camarco.png" alt="Camarco" />
 						</a>
 					</div>
 				
-					<div class="col-xxs-12 col-xs-6 col-sm-8 col-md-8 col-lg-8 footer-links">
+					<div class="col-xxs-12 col-xs-6 col-sm-8 col-md-9 col-lg-9 footer-links">
 						<nav id="footer-navigation">
 							<ul>
 								<?php if(get_field('facebook', 15)): ?><li class="nav-footer-facebook"><a href="<?php echo get_field('facebook', 15); ?>" title="Facebook" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/facebook-footer.png" alt="Facebook" /></a></li><?php endif; ?>
