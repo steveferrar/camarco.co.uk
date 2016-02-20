@@ -24,29 +24,22 @@ if(get_field('sectors')):
 
 						<h2><?php echo get_sub_field('title'); ?></h2>
 
-						<p class="sector__text">
-						<?php 
-						echo get_sub_field('text'); 
-						if(get_sub_field('add_read_more') == 'Yes'):
-							echo '&nbsp;<a href="" class="sector__read-more js-read-more" class="read-more-link">Read More</a>';
-							echo '</p>';
-							echo '<div class="sector__more-text js-more-text">' . get_sub_field('read_more_text') . '</div>';
-						else:
-							echo '</p>';
-						endif;
-						?>
+						<div class="sector__text">
+							<div class="sector__more-text js-more-text"><?php echo get_sub_field('text'); ?></div>
+							<a href="" class="sector__read-more js-read-more">Read about <?php echo get_sub_field('title'); ?> &raquo;</a>
+						</div>
 					
 					</div>
 							
 				<?php
 				endif;
 				
-				if($i == 2):
-					echo '<div class="clearfix"></div>';
-					$i = 1;
-				else:
-					$i++;	
-				endif;
+					if($i == 2):
+						echo '<div class="clearfix"></div>';
+						$i = 1;
+					else:
+						$i++;	
+					endif;
 				
 				endwhile; 
 				?>
@@ -73,7 +66,8 @@ if(get_field('additional_content')):
 			<div class="row">
 			
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				
+					
+					<br />
 					<?php echo get_field('additional_content'); ?>
 					
 				</div>

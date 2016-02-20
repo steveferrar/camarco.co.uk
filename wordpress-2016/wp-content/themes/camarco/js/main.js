@@ -56,12 +56,24 @@ $(document).ready(function(){
 	$('.js-read-more').click(function(e){
 		e.preventDefault();
 		$(this).fadeOut('fast');
-		$(this).parent().next().stop().slideDown('fast');
+		$(this).prev().stop().slideDown('fast');
 	});
 
 
-	// ----- People Thumbnails
+	// ----- Quotes
 	// ---------------------------------------------
+	var homeQuotes = $('.js-home-quote');
+    var homeQuotesIndex = -1;
+    
+    function showNextQuote() {
+        ++homeQuotesIndex;
+        homeQuotes.eq(homeQuotesIndex % homeQuotes.length)
+            .fadeIn(2000)
+            .delay(4000)
+            .fadeOut(2000, showNextQuote);
+    }
+    
+    showNextQuote();
 
 	
 	

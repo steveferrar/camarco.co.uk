@@ -640,59 +640,101 @@
 		text-align:center;
 		
 		margin:0px auto;
-		padding:0px;
+		padding:70px 0px;
 		border:0px none;
 	}
 
+		/* Content */
 		.home__header-content{
 			color:#000000;
-			font-size:45px;
+			font-size:35px;
 			font-family:'gotham-medium', Arial, Helvetica, sans-serif !important;
 			letter-spacing:1px;
-			line-height:60px;
+			line-height:50px;
 
 			margin-top:7%;
-			padding-top:70px;
-			padding-bottom:100px;
-
-
 		}
 
-		.home__header-content img{
+			.home__header-content img.home__logo{
+				width:100%;
+				max-width:320px;
+				height:auto;
+			}
+
+			@media only screen and (max-width:1199px){
+				.home__header-content{
+					font-size:30px;
+					line-height:45px;
+					margin-top:10%;
+				}
+				.home__header-content img.home__logo{
+					width:90%;
+				}
+			}
+
+			@media only screen and (max-width:991px){
+				.home__header-content{
+					font-size:25px;
+					line-height:35px;
+				}
+				.home__header-content img.home__logo{
+					width:70%;
+				}
+			}
+
+			@media only screen and (max-width:767px){
+				.home__header-content{
+					margin-top:15%;
+				}
+				.home__header-content img.home__logo{
+					width:50%;
+				}
+			}
+
+
+		/* Quotes */
+		.home__header-quotes{
 			width:100%;
-			max-width:429px;
-			height:auto;
+			position:absolute;
+			bottom:50px;
 		}
 
-		@media only screen and (max-width:1199px){
-			.home__header-content{
-				font-size:40px;
-				line-height:55px;
-				margin-top:10%;
+			.home__header-quote{
+				display:none;
 			}
-			.home__header-content img{
-				width:90%;
+
+			.home__header-quote-inner{
+				display:flex;
+				align-items: center;
+				justify-content: center;
 			}
-		}
+
+				.home__header-quote p{
+					color:#000000;
+					text-align:left;
+				}
+
+				.home__header-quote img{
+					width:auto;
+					max-width:100%;
+					height:auto;
+				}
 
 		@media only screen and (max-width:991px){
-			.home__header-content{
-				font-size:35px;
-				line-height:50px;
+			.home__header-quote-inner{
+				display:block;
 			}
-			.home__header-content img{
-				width:70%;
-			}
+
+				.home__header-quote p{
+					text-align:center;
+				}
 		}
 
 		@media only screen and (max-width:767px){
-			.home__header-content{
-				font-size:25px;
-				line-height:35px;
-				margin-top:15%;
-			}
-			.home__header-content img{
-				width:50%;
+			.home__header-quotes{
+				position:relative;
+				bottom:auto;
+				margin-top:100px;
 			}
 		}
 

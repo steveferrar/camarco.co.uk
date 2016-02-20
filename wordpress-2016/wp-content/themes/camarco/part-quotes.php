@@ -28,7 +28,7 @@ $quote_background = get_bloginfo('template_url') . '/img/background-quote-0' . r
 						<p class="quote__quotation"><img src="<?php bloginfo('template_url'); ?>/img/quote.png" alt="&ldquo;" /></p>
 						<p class="quote__text"><?php echo $quote['text']; ?></p>
 						<?php if($quote['author']): echo '<p class="quote__divide"><img src="' . get_bloginfo('template_url') . '/img/quote-divide.png" alt="&mdash;" /></p><p class="quote__author">' . $quote['author'] . '</p>'; endif; ?>
-						<?php if($logo): echo '<p class="quote__image"><img src="' . $logo[0] . '" alt="' . $quote['author'] . '" /></p>'; endif; ?>
+						<?php if($logo): echo '<p class="quote__image"><img src="' . $logo[0] . '" alt="' . $quote['author'] . '" data-no-retina /></p>'; endif; ?>
 					<?php
 					endif;
 					break;
