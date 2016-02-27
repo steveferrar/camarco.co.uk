@@ -930,6 +930,28 @@
 		    line-height: 25px;
 		}
 
+		.people__info-contact{}
+
+		.people__info-contact span{
+			width:100%;
+			display:block;
+			clear:both;
+		}
+
+		.people__info-contact i{
+			color:#ACACAC;
+		}
+
+		.people__info-contact a,
+		.people__info-contact a:link,
+		.people__info-contact a:active,
+		.people__info-contact a:visited 
+		.people__info-contact a:hover{
+			color:#777777 !important;
+			font-family:'gotham-book', Arial, Helvetica, sans-serif !important;
+			text-decoration:none !important;
+		}
+
 
 	/* -- Contact Page ---------- */
 	#google_map{

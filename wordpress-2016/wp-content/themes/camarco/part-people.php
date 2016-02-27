@@ -19,6 +19,7 @@ if(get_field('profiles')):
 					<?php echo get_field('our_people_introduction'); ?>
 				</div>
 				
+				<?php /*
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 our-people-profiles" style="display:none;">
 				
 					<div class="row">
@@ -54,12 +55,13 @@ if(get_field('profiles')):
 						<?php
 						$p++;
 						endif;
-						endwhile; 
+						endwhile;
 						?>
 							
 					</div>
 				
 				</div>
+				*/ ?>
 				
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 people__thumbnails">
 				
@@ -108,7 +110,15 @@ if(get_field('profiles')):
 											<p class="people__info-job"><em><?php echo get_sub_field('job_title'); ?></em></p>
 											</p>
 											<div class="people__info-biography">
+												
 												<?php echo get_sub_field('biography'); ?>
+												<?php $firstname = explode(' ',trim(get_sub_field('name'))); ?>
+												<?php if (get_sub_field('email') || get_sub_field('phone') || get_sub_field('linkedin')): echo '<p class="people__info-contact">'; endif; ?>
+													<?php if (get_sub_field('phone')): echo '<span><i class="fa fa-phone-square"></i> ' . get_sub_field('phone') . '</span>'; endif; ?>
+													<?php if (get_sub_field('email')): echo '<span><i class="fa fa-envelope"></i> <a href="mailto:' . get_sub_field('email') . '" title="' . get_sub_field('email') . '">' . get_sub_field('email') . '</a></span>'; endif; ?>
+													<?php if (get_sub_field('linkedin')): echo '<span><i class="fa fa-linkedin-square"></i> <a href="' . get_sub_field('linkedin') . '"> Connect with ' . $firstname[0] . ' on LinkedIn</a></span>'; endif; ?>
+												<?php if (get_sub_field('email') || get_sub_field('phone') || get_sub_field('linkedin')): echo '</p>'; endif; ?>
+											
 											</div>
 
 										</div>

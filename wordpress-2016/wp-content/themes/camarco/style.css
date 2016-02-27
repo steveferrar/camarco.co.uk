@@ -1,10 +1,10 @@
 /*
-Theme Name: Camarco [3.0.0] (2016)
+Theme Name: Camarco [3.0.1] (2016)
 Theme URI: http://www.camarco.co.uk
 Author: Steve Ferrar
 Author URI: http://www.steveferrar.com
-Description: Theme for Camarco (January 2016)
-Version: 3.0.0
+Description: Theme for Camarco (February 2016)
+Version: 3.0.1
 Tags: Custom Theme, Bootstrap, Boilerplate, Camarco, Steve Ferrar
 */
 
@@ -20,6 +20,7 @@ Tags: Custom Theme, Bootstrap, Boilerplate, Camarco, Steve Ferrar
 
 /* Fonts */
 @import url("fonts/gotham/gotham.css");
+@import url("fonts/font-awesome-4.5.0/css/font-awesome.min.css");
 
 /* Custom */
 @import url("css/main.css");
