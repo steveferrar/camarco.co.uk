@@ -100,6 +100,11 @@
 					<nav id="navigation">
 						<ul>
 							<li class="nav-about"><a href="<?php echo get_home_url(); ?>" title="About">About</a></li>
+							<?php if(is_front_page()): ?>
+								<li class="nav-people"><a href="#our-people" title="Our People" class="scrollAnchor">Our People</a></li>
+							<?php else: ?>
+								<li class="nav-people"><a href="<?php echo get_home_url(); ?>#our-people" title="Our People">Our People</a></li>
+							<?php endif; ?>
 							<li class="nav-sectors"><a href="<?php echo get_permalink(5); ?>" title="Sectors">Sectors</a></li>
 							<li class="nav-services"><a href="<?php echo get_permalink(9); ?>" title="Services">Services</a></li>
 							<li class="nav-howwework"><a href="<?php echo get_permalink(13); ?>" title="How We Work">How We Work</a></li>

@@ -75,7 +75,30 @@ $(document).ready(function(){
     
     showNextQuote();
 
-	
+
+	// Smooth Scroll to Anchor
+    // --------------------------------------------- 
+	$("a.scrollAnchor").click(function(e) {
+		e.preventDefault();
+		if (window.innerWidth <= 767){
+			$('body').removeClass('js-stopScrolling');
+			$('.header-navigation-container').stop().slideUp('fast');
+		};
+		$('.menu-button').removeClass('active');
+		$('.hamburger-menu').stop().slideUp();
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+			|| location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			   if (target.length) {
+				 $('html,body').stop().animate({
+					 scrollTop: target.offset().top - 70
+				}, 500);
+				return false;
+			}
+		};
+	});
+
 	
 	// ----- Google Maps
 	// ---------------------------------------------

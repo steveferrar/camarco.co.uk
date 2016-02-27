@@ -683,6 +683,9 @@
 			}
 
 			@media only screen and (max-width:767px){
+				section.home{
+					padding-bottom:0px;
+				}
 				.home__header-content{
 					margin-top:15%;
 				}
@@ -694,9 +697,11 @@
 
 		/* Quotes */
 		.home__header-quotes{
+			background:rgba(168,182,191,0.85);
 			width:100%;
 			position:absolute;
-			bottom:50px;
+			bottom:0px;
+			padding:50px 0px;
 		}
 
 			.home__header-quote{
@@ -710,7 +715,7 @@
 			}
 
 				.home__header-quote p{
-					color:#000000;
+					color:#FFFFFF;
 					text-align:left;
 				}
 
@@ -736,6 +741,12 @@
 				bottom:auto;
 				margin-top:100px;
 			}
+
+				.home__header-quote img{
+					width:auto;
+					max-width:50%;
+					height:auto;
+				}
 		}
 
 

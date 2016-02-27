@@ -7,8 +7,8 @@ The template part for displaying the OUR PEOPLE section.
 <?php 
 if(get_field('profiles')): 
 ?>	
-		
-	<section>
+
+	<section id="our-people">
 	
 		<div class="container">
 		
