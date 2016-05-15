@@ -1,0 +1,27 @@
+/*
+Theme Name: Camarco [3.0.2] (2016)
+Theme URI: http://www.camarco.co.uk
+Author: Steve Ferrar
+Author URI: http://www.steveferrar.com
+Description: Theme for Camarco (May 2016)
+Version: 3.0.2
+Tags: Custom Theme, Bootstrap, Boilerplate, Camarco, Steve Ferrar
+Updates: Update to grey header sections to give them black and white filter.
+*/
+
+
+/* = Get Stylesheets
+-----------------------------------------------*/
+
+/* Bootstrap */
+@import url("css/bootstrap.min.css");
+
+/* Nivo Lightbox */
+@import url("css/nivo-lightbox.css");
+
+/* Fonts */
+@import url("fonts/gotham/gotham.css");
+@import url("fonts/font-awesome-4.5.0/css/font-awesome.min.css");
+
+/* Custom */
+@import url("css/main.css");
